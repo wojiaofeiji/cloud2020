@@ -7,7 +7,8 @@
     <groupId>com.atguigu.springcloud</groupId>
     <artifactId>cloud2020</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>POM</packaging>
+    <packaging>pom</packaging>
+    <description>父工程,统一管理jar包版本</description>
 
     <modules>
         <module>cloud-api-common</module>
@@ -56,8 +57,7 @@
         <module>cloudalibaba-consumer-nacos-order84</module>
 
     </modules>
-    <packaging>pom</packaging>
-    <description>父工程,统一管理jar包版本</description>
+
 
     <!--统一管理jar包版本-->
     <properties>
@@ -67,6 +67,7 @@
         <junit.version>4.12</junit.version>
         <log4j.version>1.2.17</log4j.version>
         <lombok.version>1.16.18</lombok.version>
+
         <mysql.version>8.0.18</mysql.version>
         <druid.version>1.1.16</druid.version>
         <druid.spring.boot.starter.version>1.1.10</druid.spring.boot.starter.version>
@@ -142,6 +143,7 @@
                     <fork>true</fork>
                     <addResources>true</addResources>
                 </configuration>
+                <version>${spring.boot.version}</version>
             </plugin>
         </plugins>
     </build>
