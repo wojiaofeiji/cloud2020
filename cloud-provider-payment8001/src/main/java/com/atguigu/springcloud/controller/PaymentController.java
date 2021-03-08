@@ -37,8 +37,8 @@ public class PaymentController {
 
     /**
      * 新增
-     * postman http://localhost:8001/payment/create?serial=atguigu002
-     *
+     * 可以使用postman接口测试，或者Swagger2
+     * http://localhost:8001/payment/create?serial=atguigu002
      * @param payment
      * @return
      */

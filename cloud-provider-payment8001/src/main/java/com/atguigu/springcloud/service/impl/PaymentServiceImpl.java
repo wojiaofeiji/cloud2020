@@ -13,6 +13,7 @@ import javax.annotation.Resource;
  **/
 @Service
 public class PaymentServiceImpl implements PaymentService {
+
     @Resource
     private PaymentDao paymentDao;
 

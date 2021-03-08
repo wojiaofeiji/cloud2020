@@ -8,11 +8,11 @@ import org.apache.ibatis.annotations.Param;
  * @author zzyy
  * @date 2020/2/18 10:27
  **/
-@Mapper
+@Mapper //如果使用的Mybatis，推荐使用@Mapper
 public interface PaymentDao {
     /**
      * 新增
-     *
+     * create add一般都是返回的int
      * @param payment
      * @return
      */
@@ -20,7 +20,7 @@ public interface PaymentDao {
 
     /**
      * 根据Id查询
-     *
+     * @param参数.
      * @param id
      * @return
      */
