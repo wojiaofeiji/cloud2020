@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 /**
+ * @configuration和@bean注入一个类
  * @author zzyy
  * @date 2020-02-18 17:27
  **/

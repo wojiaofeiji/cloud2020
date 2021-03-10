@@ -27,9 +27,12 @@ import java.util.List;
 public class OrderController {
     //public static final String PAYMENT_URL = "http://localhost:8001";
     /**
-     * 通过在eureka上注册过的微服务名称调用
+     * 通过在eureka上注册过的微服务名称调用，
      */
     public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
+
+//    不通过eureka调用，通过服务之间直接调用的方式，则如下面方式编写定义url.
+//    public static final String PAYMENT_URL = "http://localhost:8001";
     @Resource
     private RestTemplate restTemplate;
 
@@ -43,7 +46,8 @@ public class OrderController {
 
     /**
      * http://localhost/consumer/payment/create?serial=atguigu002
-     *
+     * Spring restTemplate的使用 RestFul的远程http调用工具类
+     * 此处的名称只是增加一个consumer模块名称.
      * @param payment
      * @return
      */
