@@ -27,7 +27,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
             <exclusions>
-                <!--先排除自带的zookeeper3.5.3-->
+                <!--jar包冲突 先排除自带的zookeeper3.5.3-->
                 <exclusion>
                     <groupId>org.apache.zookeeper</groupId>
                     <artifactId>zookeeper</artifactId>

@@ -11,7 +11,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @create 2020/2/19 14:15
  **/
 @SpringBootApplication
-@EnableDiscoveryClient
+@EnableDiscoveryClient  //该注解用于向使用consule或者zookeeper作为服务注册中心时注册服务
 public class PaymentMain8004 {
     public static void main(String[] args) {
         SpringApplication.run(PaymentMain8004.class, args);
