@@ -13,7 +13,7 @@
     <description>支付服务的提供者之注册中心consul</description>
 
     <dependencies>
-        <!--SpringCloud consul-server-->
+        <!--SpringCloud consul-server 依赖包-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-consul-discovery</artifactId>
